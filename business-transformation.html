@@ -97,6 +97,7 @@
                     <a href="#pillars-recovery" class="toc-link">Pillars of Recovery</a>
                     <a href="#liquidity" class="toc-link toc-sub">Emergency Liquidity</a>
                     <a href="#root-cause" class="toc-link toc-sub">Root Cause Analysis</a>
+                    <a href="#restructuring" class="toc-link toc-sub">Business Model Restructuring</a>
                 </nav>
                 <div class="toc-cta">
                     <a href="index.html#contact" class="toc-cta-btn">Request Consultation</a>
@@ -228,12 +229,30 @@
                         <div class="rp-body">
                             <h3 class="rp-name">Emergency Liquidity Management</h3>
                             <div class="rp-icon-wrap">
+                                <!-- Gauge / meter icon — urgency + control -->
                                 <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="1.5" />
-                                    <path d="M32 18 L32 46 M22 28 L32 18 L42 28" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <line x1="22" y1="40" x2="42" y2="40" stroke="currentColor" stroke-width="1.5"
+                                    <!-- Outer arc -->
+                                    <path d="M10 44 A24 24 0 1 1 54 44" stroke="currentColor" stroke-width="1.5"
                                         stroke-linecap="round" />
+                                    <!-- Tick marks -->
+                                    <line x1="32" y1="10" x2="32" y2="16" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <line x1="14" y1="17" x2="18" y2="21" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <line x1="50" y1="17" x2="46" y2="21" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <line x1="8" y1="35" x2="14" y2="35" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <line x1="56" y1="35" x2="50" y2="35" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <!-- Needle pointing to critical (left of center) -->
+                                    <line x1="32" y1="38" x2="18" y2="22" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" opacity="0.9" />
+                                    <!-- Pivot -->
+                                    <circle cx="32" cy="38" r="3" fill="currentColor" />
+                                    <!-- Warning arc (critical zone) -->
+                                    <path d="M10 44 A24 24 0 0 1 21 18" stroke="currentColor" stroke-width="3"
+                                        stroke-linecap="round" opacity="0.35" />
                                 </svg>
                             </div>
                             <p class="rp-desc">
@@ -297,6 +316,60 @@
                             </ul>
                         </div>
                     </div>
+
+                    <!-- Divider -->
+                    <div class="rp-inter-divider"></div>
+
+                    <!-- Pillar: Business Model Restructuring -->
+                    <div class="recovery-pillar" id="restructuring">
+                        <div class="rp-number">03</div>
+                        <div class="rp-body">
+                            <h3 class="rp-name">Business Model Restructuring</h3>
+                            <div class="rp-icon-wrap">
+                                <!-- Modular grid icon — rebuilding architecture -->
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Top centre block -->
+                                    <rect x="22" y="6" width="20" height="14" rx="1.5" stroke="currentColor"
+                                        stroke-width="1.5" />
+                                    <!-- Bottom left block -->
+                                    <rect x="6" y="40" width="20" height="14" rx="1.5" stroke="currentColor"
+                                        stroke-width="1.5" />
+                                    <!-- Bottom right block -->
+                                    <rect x="38" y="40" width="20" height="14" rx="1.5" stroke="currentColor"
+                                        stroke-width="1.5" />
+                                    <!-- Connector: top to bottom-left -->
+                                    <path d="M24 20 L16 40" stroke="currentColor" stroke-width="1"
+                                        stroke-linecap="round" opacity="0.6" />
+                                    <!-- Connector: top to bottom-right -->
+                                    <path d="M40 20 L48 40" stroke="currentColor" stroke-width="1"
+                                        stroke-linecap="round" opacity="0.6" />
+                                    <!-- Horizontal connector between bottom blocks -->
+                                    <line x1="26" y1="47" x2="38" y2="47" stroke="currentColor" stroke-width="1"
+                                        stroke-linecap="round" opacity="0.4" stroke-dasharray="2 2" />
+                                    <!-- Centre node -->
+                                    <circle cx="32" cy="30" r="3" fill="currentColor" opacity="0.7" />
+                                </svg>
+                            </div>
+                            <p class="rp-desc">
+                                A distressed business is rarely broken at the edges - it is broken at its core. The
+                                revenue model, the cost architecture, or the value proposition itself has become
+                                misaligned with the realities of the market. Cosmetic adjustments will not hold.
+                            </p>
+                            <p class="rp-desc">
+                                We redesign the enterprise from the inside out. By mapping the current business model
+                                against market realities and stakeholder expectations, we identify where value is being
+                                created, where it is being destroyed, and what must fundamentally change for the
+                                organisation to operate sustainably and competitively.
+                            </p>
+                            <ul class="rp-points">
+                                <li>Business model canvas deconstruction</li>
+                                <li>Revenue stream realignment</li>
+                                <li>Cost architecture redesign</li>
+                                <li>Value proposition repositioning</li>
+                                <li>Operational model reconfiguration</li>
+                            </ul>
+                        </div>
+                    </div>
                 </section><!-- /pillars-recovery -->
 
                 <!--  Consultation CTA  -->
@@ -350,12 +423,12 @@
                     <div class="section-tag">EXPLORE MORE</div>
                     <h3 class="svc-also-title">Other Advisory Pillars</h3>
                     <div class="also-grid">
-                        <a href="index.html#expertise" class="also-card">
+                        <a href="market-entry.html" class="also-card">
                             <div class="also-num">02</div>
                             <div class="also-name">Market Entry &amp; Protection</div>
                             <div class="also-arrow">→</div>
                         </a>
-                        <a href="index.html#expertise" class="also-card">
+                        <a href="strategic-diagnostic.html" class="also-card">
                             <div class="also-num">03</div>
                             <div class="also-name">Strategic Diagnostic</div>
                             <div class="also-arrow">→</div>
